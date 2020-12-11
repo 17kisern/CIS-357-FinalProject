@@ -98,6 +98,11 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 		1. Calls the signout functionality in the *AWSMobileClient*
 		1. Creates an Intent and transitions to a different activity (the [`AuthenticationActivity.kt`]*
 
+
+# Notes (Conclusion)
+#### AND THAT'S IT, YOU'RE DONE!
+Launch your app to test and see if you did everything right!
+
 Note how simple it is to sign out the user. This functionality can be implemented at any point in your application where you wish to sign out the user, whether it be do to a crash, manual logout, or any other reason.
 All it requires is two steps
 1. Calling `AWSMobileClient.getInstance().signOut()` to sign out
@@ -107,10 +112,6 @@ All it requires is two steps
 	startActivity(i)
 	```(app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
 
-# AND THAT'S IT, YOU'RE DONE
-Launch your app to test and see if you did everything right!
-
-#### Notes
 I initially intended this demo to include functionality for changing user profile information, as I had previous experience using AWS Cognito with their .NET SDK, however an oversight on my part, was that I did not realize Android Studio's SDK is different than the .NET SDK, so the entire implementation of AWS Cognito was different than I had anticipated, and included an entirely different workflow for authentication (using AWS Amplify rather than an individual Cogntio Client).
 
 I altered this demo to require the same proportional amount of work as I had previously expected, all while still covering the functionality and authentication workflow of Cognito (albeit utilizing AWS Amplify to do so)
