@@ -17,12 +17,12 @@ https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html
 https://docs.amplify.aws/cli/start/install
 1. Within the AWS Console (online browser), navigate to the IAM service, and create an IAM User with an Access ID and Secret Key (Write these two values down, they will be used in the next step
 	1. When choosing permissions for this IAM User, for development purposes, I gave it complete admin credentials, the same as what I have in AWS under the Admin account, however you SHOULD NEVER do this in an actual production use case.
-1. Run command `amplify init`, and follow the prompts, using default values for everything 
+1. Run the command `amplify init`, and follow the prompts, using default values for everything 
 	1. When prompted for if you want to use an AWS Profile, say yes
 		1. Follow the prompts to connect the IAM User you just created (Using the Access ID and Secret Key) to give Amplify permission to operate on behalf of this IAM User
-1. Run `amplify add auth` and follow the prompts, using default values
+1. Run the command `amplify add auth` and follow the prompts, using default values
 	1. Here we are telling amplify to add a functionality, that functionality being authentication
-1. Run `amplify push` and follow the prompts, using default values
+1. Run the command `amplify push` and follow the prompts, using default values
 	1. Here we are telling amplify to actually perform all the setup we've configured into the cloud (AWS)
 
 #### Android Studio Guide
