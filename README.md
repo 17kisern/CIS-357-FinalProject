@@ -30,7 +30,8 @@ Now we're ready to begin working in the actual Android Studio project. The major
 AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus more on whatever functionality your app will have, and less on the UI's interactions with Authentication. So the primary configuration needed within Android Studio is simply to tell it to run our Login Portal BEFORE running the actual app (change the launcher).
 
 1. Add the following dependencies to your app's build.gradle file
-	1. ```// AWSMobileClient
+	1. ```
+	    // AWSMobileClient
 	    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.13.+'
 
 	    // Cognito UserPools for SignIn
