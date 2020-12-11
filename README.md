@@ -38,7 +38,8 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
     implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
 
     // Drop in UI provided by AWS
-    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'```
+    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
+	```
 1. Change the `AndroidManifest.xml` file such that it launches the Login Portal by default
 	1. This will result in some errors (don't worry), as we haven't created the AuthenticationActivity yet
 	1. Specifically note lines 12 through 24 that have changed
@@ -73,5 +74,5 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 1. Create the AuthenticationActivity by adding a new "Empty Activity" to the project, called `AuthenticationActivity`
 	1. For this activity, we don't actually have to touch any UI, as the "Drop In" UI handles that all for us
 1. Configure the "Drop-In" UI
-	1. Reference `AuthenticationActivity.kt` in the project files
+	1. Reference [`AuthenticationActivity.kt`]() in the project files
 1. 
