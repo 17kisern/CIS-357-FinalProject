@@ -100,12 +100,12 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 
 Note how simple it is to sign out the user. This functionality can be implemented at any point in your application where you wish to sign out the user, whether it be do to a crash, manual logout, or any other reason.
 All it requires is two steps
-	1. Calling `AWSMobileClient.getInstance().signOut()` to sign out
-	1. Switch back to the Login Portal using 
-		```
-		val i = Intent(this@MainActivity, AuthenticationActivity::class.java)
-		startActivity(i)
-		```(app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
+1. Calling `AWSMobileClient.getInstance().signOut()` to sign out
+1. Switch back to the Login Portal using 
+	```
+	val i = Intent(this@MainActivity, AuthenticationActivity::class.java)
+	startActivity(i)
+	```(app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
 
 # AND THAT'S IT, YOU'RE DONE
 Launch your app to test and see if you did everything right!
