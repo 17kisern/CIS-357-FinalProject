@@ -95,7 +95,7 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 	1. Cache references to the TextView and the Button we just created
 	1. Create a listener on the *"signOutButton"* that 
 		1. Resets the *"usernameText"* to show as "Guest"
-		1. Calls the signout functionality in the *AWSMobileClient
+		1. Calls the signout functionality in the *AWSMobileClient*
 		1. Creates an Intent and transitions to a different activity (the [`AuthenticationActivity.kt`]*
 		1. Note how simple it is to sign out the user. All it requires is two steps
 			1. Calling `AWSMobileClient.getInstance().signOut()` to sign out
