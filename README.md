@@ -38,7 +38,8 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 	    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
 
 	    // Drop in UI provided by AWS
-	    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'```
+	    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
+	    ```
 1. Change the `AndroidManifest.xml` file such that it launches the Login Portal by default
 	1. This will result in some errors (don't worry), as we haven't created the AuthenticationActivity yet
 	1. Specifically note lines 12 through 24 that have changed
