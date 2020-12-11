@@ -81,7 +81,7 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 			1. If Signed In  -> Load the MainActivity
 			1. If Signed Out -> Show the "Drop In" UI
 1. Adjust the UI view of the Main Activity so that the user has the ability to sign out
-	1. Reference [`activity_main.xml`](app\src\main\res\layout/activity_main.xml)
+	1. Reference [`activity_main.xml`](app/src/main/res/layout/activity_main.xml)
 	1. Add a TextView resource and refactor it's ID to be *"usernameText"*
 	1. Add a Button resource and refactor it's ID to be *"signOutButton"*
 1. Adjust the code of the Main Activity so that our app takes action on these newly created resources
