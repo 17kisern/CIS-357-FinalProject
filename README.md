@@ -68,8 +68,7 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 				android:label="@string/app_name"></activity>
 		</application>
 
-	</manifest>
-	```
+	</manifest>```
 1. Create the AuthenticationActivity by adding a new "Empty Activity" to the project, called `AuthenticationActivity`
 	1. For this activity, we don't actually have to touch any UI, as the "Drop In" UI handles that all for us
 1. Configure the "Drop-In" UI
