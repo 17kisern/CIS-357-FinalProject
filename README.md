@@ -73,6 +73,25 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 		```
 1. Create the AuthenticationActivity by adding a new "Empty Activity" to the project, called `AuthenticationActivity`
 	1. For this activity, we don't actually have to touch any UI, as the "Drop In" UI handles that all for us
-1. Configure the "Drop-In" UI
+1. Configure the "Drop In" UI
 	1. Reference [`AuthenticationActivity.kt`](app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt) in the project files
-1. 
+	1. We are -
+		1. Initializing the *AWSMobileClient*
+		1. Creating a callback so it knows what to do depending on what state our user is in
+			1. If Signed In  -> Load the MainActivity
+			1. If Signed Out -> Show the "Drop In" UI
+1. Adjust the UI view of the Main Activity so that the user has the ability to sign out
+	1. Reference [`activity_main.xml`](app\src\main\res\layout/activity_main.xml)
+	1. Add a TextView resource and refactor it's ID to be *"usernameText"*
+	1. Add a Button resource and refactor it's ID to be *"signOutButton"*
+1. Adjust the code of the Main Activity so that our app takes action on these newly created resources
+	1. Reference [`MainActivity.kt`](app/src/main/java/com/cis357/finalproject/MainActivity.kt)
+	1. Cache references to the TextView and the Button we just created
+	1. Create a listener on the *"signOutButton"* that 
+		1. Resets the *"usernameText"* to show as "Guest"
+		1. Calls the signout functionality in the *AWSMobileClient*
+		1. Creates an Intent and transitions to a different activity (the [`AuthenticationActivity.kt`](app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
+
+
+# AND THAT'S IT, YOU'RE DONE
+Launch your app to test and see if you did everything right!
