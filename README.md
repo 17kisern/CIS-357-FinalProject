@@ -31,14 +31,14 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 
 1. Add the following dependencies to your app's build.gradle file
 	1. ```
-    // AWSMobileClient
-    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.13.+'
+	    // AWSMobileClient
+	    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.13.+'
 
-    // Cognito UserPools for SignIn
-    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
+	    // Cognito UserPools for SignIn
+	    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
 
-    // Drop in UI provided by AWS
-    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
+	    // Drop in UI provided by AWS
+	    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
 	```
 1. Change the `AndroidManifest.xml` file such that it launches the Login Portal by default
 	1. This will result in some errors (don't worry), as we haven't created the AuthenticationActivity yet
