@@ -97,3 +97,8 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 
 # AND THAT'S IT, YOU'RE DONE
 Launch your app to test and see if you did everything right!
+
+#### Notes
+I initially intended this demo to include functionality for changing user profile information, as I had previous experience using AWS Cognito with their .NET SDK, however an oversight on my part, was that I did not realize Android Studio's SDK is different than the .NET SDK, so the entire implementation of AWS Cognito was different than I had anticipated, and included an entirely different workflow for authentication (using AWS Amplify rather than an individual Cogntio Client).
+
+I altered this demo to require the same proportional amount of work as I had previously expected, all while still covering the functionality and authentication workflow of Cognito (albeit utilizing AWS Amplify to do so)
