@@ -123,6 +123,6 @@ If you ever wish to manually implement the functionality you see in the "Drop In
 
 I initially intended this demo to include functionality for changing user profile information, as I had previous experience using AWS Cognito with their .NET SDK, however an oversight on my part, was that I did not realize Android Studio's SDK is different than the .NET SDK, so the entire implementation of AWS Cognito was different than I had anticipated, and included an entirely different workflow for authentication (using AWS Amplify rather than an individual Cogntio Client).
 
-I altered this demo to require the accomodate for this shift in additional service use (Amplify), all while still covering the functionality and authentication workflow of Cognito (albeit utilizing AWS Amplify to do so)
+I altered this demo to accomodate for that shift in functionality, but ultimately had to scale down the features implemented in the demo due to using a completely new SDK as opposed to one I had previous exposure to. Thankfully, I was still able to cover the functionality and authentication workflow of Cognito (albeit utilizing AWS Amplify to do so)
 
 (Unrelated to the implementation shown in this project) If you at any point are working on a .NET project, AWS has recently released [v3.5 of their .NET SDK](https://aws.amazon.com/sdk-for-net/), and it now supports almost all of AWS' cloud services, all from script
