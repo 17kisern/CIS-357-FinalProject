@@ -43,32 +43,32 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 	1. This will result in some errors (don't worry), as we haven't created the AuthenticationActivity yet
 	1. Specifically note lines 12 through 24 that have changed
 	1. ```
-	<?xml version="1.0" encoding="utf-8"?>
-	<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-		package="com.cis357.finalproject">
+		<?xml version="1.0" encoding="utf-8"?>
+		<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+			package="com.cis357.finalproject">
 
-		<application
-			android:allowBackup="true"
-			android:icon="@mipmap/ic_launcher"
-			android:label="@string/app_name"
-			android:roundIcon="@mipmap/ic_launcher_round"
-			android:supportsRtl="true"
-			android:theme="@style/Theme.FinalProject">
-			<activity
-				android:name=".AuthenticationActivity"
-				android:noHistory="true">
-				<intent-filter>
-					<action android:name="android.intent.action.MAIN" />
+			<application
+				android:allowBackup="true"
+				android:icon="@mipmap/ic_launcher"
+				android:label="@string/app_name"
+				android:roundIcon="@mipmap/ic_launcher_round"
+				android:supportsRtl="true"
+				android:theme="@style/Theme.FinalProject">
+				<activity
+					android:name=".AuthenticationActivity"
+					android:noHistory="true">
+					<intent-filter>
+						<action android:name="android.intent.action.MAIN" />
 
-					<category android:name="android.intent.category.LAUNCHER" />
-				</intent-filter>
-			</activity>
-			<activity
-				android:name=".MainActivity"
-				android:label="@string/app_name"></activity>
-		</application>
+						<category android:name="android.intent.category.LAUNCHER" />
+					</intent-filter>
+				</activity>
+				<activity
+					android:name=".MainActivity"
+					android:label="@string/app_name"></activity>
+			</application>
 
-	</manifest>```
+		</manifest>```
 1. Create the AuthenticationActivity by adding a new "Empty Activity" to the project, called `AuthenticationActivity`
 	1. For this activity, we don't actually have to touch any UI, as the "Drop In" UI handles that all for us
 1. Configure the "Drop-In" UI
