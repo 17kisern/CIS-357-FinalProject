@@ -5,7 +5,7 @@
 In this example, you will go from 0 -> 100 on implementing AWS Cognito Authentication in whatever your app is. The structure of the authentication designed in this tutorial, puts the majority of the authentication implementation into the cloud setup, so that it doesn't interfere with whatever your app's main functionality is supposed to be.
 The following will show you how to require a login as the launching activity (user must login before they can interact with your app), as well as a simple example of how to call the *AWSMobileClient* functions in order to log out a user under any circumstances, from anywhere in your app (ie - unforseen circumstances/crash, you would want to log out your user)
 
-[Changes to Project from what was previously planned](Asides)
+[Changes to Project from what was previously planned](####Asides)
 
 #### Prerequisites
 
