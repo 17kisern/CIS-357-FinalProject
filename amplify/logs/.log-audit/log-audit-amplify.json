@@ -1,0 +1,14 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/mnt/c/Users/Steph/OneDrive/School/GVSU 2020-2021/Fall/CIS 357 - 01/CIS-357-FinalProject/amplify/logs/.log-audit/log-audit-amplify.json",
+    "files": [
+        {
+            "date": 1607713194451,
+            "name": "/mnt/c/Users/Steph/OneDrive/School/GVSU 2020-2021/Fall/CIS 357 - 01/CIS-357-FinalProject/amplify/logs/amplify-cli-2020-12-11.log",
+            "hash": "b08e09967c12ff1339fcfc7112dbc059"
+        }
+    ]
+}
