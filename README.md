@@ -1,11 +1,15 @@
 # CIS-357-FinalProject
 
+#### Overview
+
+In this example, you will go from 0 -> 100 on implementing AWS Cognito Authentication in whatever your app is. The structure of the authentication designed in this tutorial, will show you how to require a login as the launching activity (user must login before they can interact with your app), as well as a simple example of how to call the *AWSMobileClient* functions in order to log out a user under any circumstances, from anywhere in your app (ie - unforseen circumstances/crash, you would want to log out your user)
+
 #### Prerequisites
 
 - AWS Account
 - Base Knowledge of Android Studio
 
-#### Setup Guide
+#### Setup Guide (Getting Started)
 
 1. Create a new Android Studio project
 	1. Use the "Empty Activity" template
@@ -92,6 +96,14 @@ AWS has a very helpful "Drop-In" UI, that allows you the developer, to focus mor
 	1. Create a listener on the *"signOutButton"* that 
 		1. Resets the *"usernameText"* to show as "Guest"
 		1. Calls the signout functionality in the *AWSMobileClient*
+			1. Note how simple it is to sign out the user. All it requires is two steps
+				1. Calling `AWSMobileClient.getInstance().signOut()` to sign out
+				1. Calling 
+					```
+					val i = Intent(this@MainActivity, AuthenticationActivity::class.java)
+					startActivity(i)
+					```
+					to switch back to the Login Portal
 		1. Creates an Intent and transitions to a different activity (the [`AuthenticationActivity.kt`](app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
 
 
@@ -102,3 +114,5 @@ Launch your app to test and see if you did everything right!
 I initially intended this demo to include functionality for changing user profile information, as I had previous experience using AWS Cognito with their .NET SDK, however an oversight on my part, was that I did not realize Android Studio's SDK is different than the .NET SDK, so the entire implementation of AWS Cognito was different than I had anticipated, and included an entirely different workflow for authentication (using AWS Amplify rather than an individual Cogntio Client).
 
 I altered this demo to require the same proportional amount of work as I had previously expected, all while still covering the functionality and authentication workflow of Cognito (albeit utilizing AWS Amplify to do so)
+
+(Unrelated to the implementation shown in this project) If you at any point are working on a .NET project, AWS has recently released [v3.5 of their .NET SDK](https://aws.amazon.com/sdk-for-net/), and it now supports almost all of AWS' cloud services, all from script
