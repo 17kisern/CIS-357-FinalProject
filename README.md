@@ -5,7 +5,7 @@
 In this example, you will go from 0 -> 100 on implementing AWS Cognito Authentication in whatever your app is. The structure of the authentication designed in this tutorial, puts the majority of the authentication implementation into the cloud setup, so that it doesn't interfere with whatever your app's main functionality is supposed to be.
 The following will show you how to require a login as the launching activity (user must login before they can interact with your app), as well as a simple example of how to call the *AWSMobileClient* functions in order to log out a user under any circumstances, from anywhere in your app (ie - unforseen circumstances/crash, you would want to log out your user)
 
-[Changes to Project from what was previously planned](####Asides)
+[Changes to Project from what was previously planned](# Changes to Previously Planned Demo)
 
 #### Prerequisites
 
@@ -116,8 +116,10 @@ All it requires is two steps
 	```(app/src/main/java/com/cis357/finalproject/AuthenticationActivity.kt))
 	
 If you ever wish to manually implement the functionality you see in the "Drop In" UI, you can do that as well, simply calling `AWSMobileClient.getInstance().` and then whatever functionality you're interested, ranging from password changing, sign in (if you wanted a custom designed login portal), sign out, and much more.
+
+(Unrelated to the implementation shown in this project) If you at any point are working on a .NET project, AWS has recently released [v3.5 of their .NET SDK](https://aws.amazon.com/sdk-for-net/), and it now supports almost all of AWS' cloud services, all from script
 	
-#### Asides
+# Changes to Previously Planned Demo
 
 I initially intended this demo to include functionality for changing user profile information, as I had previous experience using AWS Cognito with their .NET SDK, however an oversight on my part, was that I did not realize Android Studio's SDK is different than the .NET SDK, so the entire implementation of AWS Cognito was different than I had anticipated, and included an entirely different workflow for authentication (using AWS Amplify rather than an individual Cogntio Client).
 
