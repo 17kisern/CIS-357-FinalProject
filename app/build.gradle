@@ -42,4 +42,13 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // AWSMobileClient
+    implementation 'com.amazonaws:aws-android-sdk-mobile-client:2.13.+'
+
+    // Cognito UserPools for SignIn
+    implementation 'com.amazonaws:aws-android-sdk-auth-userpools:2.13.+'
+
+    // Drop in UI provided by AWS
+    implementation 'com.amazonaws:aws-android-sdk-auth-ui:2.13.+'
 }

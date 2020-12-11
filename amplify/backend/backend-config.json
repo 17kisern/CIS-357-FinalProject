@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "cis357finalprojecta05a96fe": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
